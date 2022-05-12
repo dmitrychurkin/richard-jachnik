@@ -1,27 +1,31 @@
+import clsx from 'clsx';
+
 import Default from 'layouts/Default';
 import Map from 'components/Map';
 import Scroller from 'components/Scroller';
 import Socials from 'components/Socials';
+import ThemeSwitch from 'components/ThemeSwitch';
 
 export default function Home() {
   return (
     <Default>
-      <div className="main-wrapper">
+      <ThemeSwitch />
+      <div className="theming-subject-0 main-wrapper">
         <div className="section-fullscreen text-center">
           <div className="container">
             <div className="scroll-text">
-              <h1 className="display-1 fw-bold text-dark-01">Call me Mr. Richard</h1>
+              <h1 className="theming-subject-1 display-1 fw-bold text-dark-01">Call me Mr. Richard</h1>
             </div>
             <div className="middle-box">
               <div className="hero-avatar">
                 <img src="/Richard Jachnik.jpg" alt="" data-rjs="2" />
-                <h1 className="display-3 fw-bold fancy-text mt-4">Hello, I'm Mr. Richard</h1>
+                <h1 className="theming-subject-2 display-3 fw-bold fancy-text mt-4">Hello, I'm Mr. Richard</h1>
               </div>
             </div>
 
             <div className="bottom-box pb-4 pb-lg-5">
               <Scroller
-                className='button-text'
+                className={clsx('theming-subject-3', 'button-text')}
                 targetId='contact'
               >
                 scroll down
@@ -30,7 +34,7 @@ export default function Home() {
           </div>
         </div>
         <div id="contact" className="section-sm pt-0">
-          <div className="container">
+          <div className="theming-subject-4 container">
             {/* <div className="row gy-5">
 						<div className="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
 							<h1 className="fw-bold">Get In Touch</h1>
@@ -59,22 +63,22 @@ export default function Home() {
 					</div> */}
             <div className="row g-4 g-lg-5 text-lg-center mt-5 icon-3xl">
               <div className="col-6 col-sm-6 col-lg-3">
-                <i className="bi bi-telephone text-dark"></i>
+                <i className="bi bi-telephone text-dark" />
                 <h5 className="fw-medium mt-2 mb-0">Phone</h5>
                 <a href='tel:+44 7442 634551'><p>+44 7442 634551</p></a>
               </div>
               <div className="col-6 col-sm-6 col-lg-3">
-                <i className="bi bi-envelope text-dark"></i>
+                <i className="bi bi-envelope text-dark" />
                 <h5 className="fw-medium mt-2 mb-0">Email</h5>
                 <a href='mailto:rpjmud@gmail.com'><p>rpjmud@gmail.com</p></a>
               </div>
               <div className="col-6 col-sm-6 col-lg-3">
-                <i className="bi bi-whatsapp text-dark"></i>
+                <i className="bi bi-whatsapp text-dark" />
                 <h5 className="fw-medium mt-2 mb-0">Whatsapp</h5>
                 <a href='https://wa.me/447442634551'><p>+44 7442 634551</p></a>
               </div>
               <div className="col-6 col-sm-6 col-lg-3">
-                <i className="bi bi-geo-alt text-dark"></i>
+                <i className="bi bi-geo-alt text-dark" />
                 <h5 className="fw-medium mt-2 mb-0">Address</h5>
                 <p>2 Heathfield Park, Newtonhill AB39 3RZ</p>
               </div>

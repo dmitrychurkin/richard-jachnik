@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 
 const Preloader = () => {
     useEffect(() => {
@@ -22,4 +22,4 @@ const Preloader = () => {
     );
 };
 
-export default Preloader;
+export default memo(Preloader);
