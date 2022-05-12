@@ -1,6 +1,7 @@
 import Default from 'layouts/Default';
 import Map from 'components/Map';
 import Scroller from 'components/Scroller';
+import Socials from 'components/Socials';
 
 export default function Home() {
   return (
@@ -85,28 +86,15 @@ export default function Home() {
         </div>
         <div className="section-sm bg-black">
           <div className="container text-center">
-            <ul className="list-inline-sm mb-3">
-              <li>
-                <a className="button-circle button-circle-sm button-circle-white-2" href="#">
-                  <i className="bi bi-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a className="button-circle button-circle-sm button-circle-white-2" href="#">
-                  <i className="bi bi-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a className="button-circle button-circle-sm button-circle-white-2" href="#">
-                  <i className="bi bi-pinterest"></i>
-                </a>
-              </li>
-              <li>
-                <a className="button-circle button-circle-sm button-circle-white-2" href="#">
-                  <i className="bi bi-instagram"></i>
-                </a>
-              </li>
-            </ul>
+            <Socials
+              className='list-inline-sm mb-3'
+              classes={{ link: 'button-circle button-circle-sm button-circle-white-2' }}
+              links={[
+                { id: 'facebook', href: 'https://www.facebook.com/richard.jachnik' },
+                { id: 'twitter', href: 'https://twitter.com/barbatalus' },
+                { id: 'linkedin', href: 'https://www.linkedin.com/in/richard-jachnik-8b605b6' }
+              ]}
+            />
             <p>© 2022, All Rights Reserved.</p>
           </div>
         </div>
