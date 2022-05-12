@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-const Scroller = ({ children, targetId }) => {
+const Scroller = ({ className, children, targetId }) => {
     const onClickHandler = e => {
         e.preventDefault();
         document.getElementById(targetId)?.scrollIntoView({
@@ -9,7 +9,7 @@ const Scroller = ({ children, targetId }) => {
     };
 
     return (
-        <a className="button-text" onClick={onClickHandler}>{children}</a>
+        <a className={className} onClick={onClickHandler}>{children}</a>
     );
 };
 

@@ -20,6 +20,7 @@ export default function Home() {
 
             <div className="bottom-box pb-4 pb-lg-5">
               <Scroller
+                className='button-text'
                 targetId='contact'
               >
                 scroll down
