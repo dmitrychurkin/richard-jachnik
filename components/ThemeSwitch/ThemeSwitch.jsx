@@ -9,7 +9,7 @@ import { LIGHT, DARK, THEMES } from "consts/theme";
 import styles from './ThemeSwitch.module.css';
 
 const ThemeSwitch = () => {
-    const { theme, onToggle: onChange } = useTheme();
+    const { theme, onToggle } = useTheme();
     const value = !THEMES.get(theme);
 
     useEffect(() => {
@@ -26,9 +26,9 @@ const ThemeSwitch = () => {
                 className: styles.switch
             }}
             inputProps={{
-                value,
                 checked: value,
-                onChange
+                onClick: onToggle,
+                readOnly: true
             }}
             classes={{
                 handle: clsx(styles.slider, styles.round)

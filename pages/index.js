@@ -18,8 +18,8 @@ export default function Home() {
             </div>
             <div className="middle-box">
               <div className="hero-avatar">
-                <img src="/Richard Jachnik.jpg" alt="" data-rjs="2" />
-                <h1 className="theming-subject-2 display-3 fw-bold fancy-text mt-4">Hello, I'm Mr. Richard</h1>
+                <img src="/Richard Jachnik.jpg" alt="" />
+                <h1 className="theming-subject-2 display-3 fw-bold fancy-text mt-4">Hello, I&apos;m Mr. Richard</h1>
               </div>
             </div>
 
